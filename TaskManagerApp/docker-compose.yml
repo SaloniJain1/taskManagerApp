@@ -1,0 +1,45 @@
+services:
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=taskdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - task-db-data:/var/lib/postgresql/data
+    networks:
+      - task-network
+
+  backend:
+    build: ./backend
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/taskdb
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=password
+    depends_on:
+      - db
+    networks:
+      - task-network
+
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - task-network
+
+networks:
+  task-network:
+    driver: bridge
+
+volumes:
+  task-db-data:

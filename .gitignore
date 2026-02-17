@@ -1,27 +1,5 @@
 ### Java ###
-BackendRoleAssignment/**/*.class
-BackendRoleAssignment/**/*.log
-BackendRoleAssignment/**/*.ctxt
-BackendRoleAssignment/**/*.jar
-BackendRoleAssignment/**/*.war
-BackendRoleAssignment/**/*.nar
-BackendRoleAssignment/**/*.ear
-BackendRoleAssignment/**/*.zip
-BackendRoleAssignment/**/*.tar.gz
-BackendRoleAssignment/**/*.rar
-
-### Maven ###
-BackendRoleAssignment/target/
-BackendRoleAssignment/pom.xml.tag
-BackendRoleAssignment/pom.xml.releaseBackup
-BackendRoleAssignment/pom.xml.versionsBackup
-BackendRoleAssignment/pom.xml.restore
-BackendRoleAssignment/release.properties
-BackendRoleAssignment/dependency-reduced-pom.xml
-BackendRoleAssignment/buildNumber.properties
-BackendRoleAssignment/.mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-BackendRoleAssignment/.mvn/wrapper/maven-wrapper.jar
+BackendRoleAssignment/
 
 ### IntelliJ IDEA ###
 .idea/

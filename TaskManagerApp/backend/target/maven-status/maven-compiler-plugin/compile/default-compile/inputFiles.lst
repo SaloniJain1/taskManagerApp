@@ -1,0 +1,8 @@
+/app/src/main/java/com/taskmanager/repository/TaskRepository.java
+/app/src/main/java/com/taskmanager/service/TaskService.java
+/app/src/main/java/com/taskmanager/controller/TaskController.java
+/app/src/main/java/com/taskmanager/model/Task.java
+/app/src/main/java/com/taskmanager/dto/TaskResponseDTO.java
+/app/src/main/java/com/taskmanager/TaskManagementApplication.java
+/app/src/main/java/com/taskmanager/exception/GlobalExceptionHandler.java
+/app/src/main/java/com/taskmanager/dto/TaskRequestDTO.java
